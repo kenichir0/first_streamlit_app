@@ -51,11 +51,11 @@ streamlit.text(my_data_row)
 add_fruit = streamlit.text_input('add fruit','Kiwi')
 
 
-#conn.execute("insert into tbl_name values( ?, ? )", [ 1, "Sato" ])
+conn.execute("insert into fruit_load_list values ('" + add_fruit + "')")
 
-sql = "insert into fruit_load_list value({})"
+#sql = "insert into fruit_load_list value({})"
 
-streamlit.text(sql.format(add_fruit))
+#streamlit.text(sql.format(add_fruit))
 
-my_cur.execute(sql.format(add_fruit))
+#my_cur.execute(sql.format(add_fruit))
 
