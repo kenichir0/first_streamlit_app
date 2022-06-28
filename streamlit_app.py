@@ -53,7 +53,7 @@ add_fruit = streamlit.text_input('add fruit')
 
 #conn.execute("insert into fruit_load_list values ('" + add_fruit + "')")
 
-sql = "insert into fruit_load_list values ({})"
+sql = "insert into fruit_load_list values ('{}')"
 
 streamlit.text(sql.format(add_fruit))
 
