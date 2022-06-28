@@ -48,3 +48,14 @@ my_data_row = my_cur.fetchone()
 streamlit.text("The fruit load lists contains")
 streamlit.text(my_data_row)
 
+add_fruit = streamlit.text_input('add fruit','Kiwi')
+
+
+conn.execute("insert into tbl_name values( ?, ? )", [ 1, "Sato" ])
+
+sql = "insert into fruit_load_list value(?)",[add_fruit]
+
+st.write(sql)
+
+#my_cur.execute("insert into fruit_load_list value()")
+
