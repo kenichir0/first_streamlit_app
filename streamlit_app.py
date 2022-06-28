@@ -57,5 +57,5 @@ sql = "insert into fruit_load_list value({})"
 
 streamlit.text(sql.format(add_fruit))
 
-#my_cur.execute("insert into fruit_load_list value()")
+my_cur.execute(sql.format(add_fruit))
 
