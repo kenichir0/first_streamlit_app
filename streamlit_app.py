@@ -3,6 +3,8 @@
 import streamlit
 import pandas
 
+import snowflake.connector
+
 import requests
 
 streamlit.header("Fruityvice Fruit Advice!")
