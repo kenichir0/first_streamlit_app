@@ -53,9 +53,9 @@ add_fruit = streamlit.text_input('add fruit','Kiwi')
 
 #conn.execute("insert into tbl_name values( ?, ? )", [ 1, "Sato" ])
 
-sql = "insert into fruit_load_list value(?)",[add_fruit]
+sql = "insert into fruit_load_list value({})"
 
-streamlit.text(sql)
+streamlit.text(sql.format(add_fruit))
 
 #my_cur.execute("insert into fruit_load_list value()")
 
