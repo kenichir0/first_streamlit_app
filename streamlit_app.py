@@ -55,7 +55,7 @@ add_fruit = streamlit.text_input('add fruit','Kiwi')
 
 sql = "insert into fruit_load_list value(?)",[add_fruit]
 
-st.write(sql)
+streamlit.text(sql)
 
 #my_cur.execute("insert into fruit_load_list value()")
 
